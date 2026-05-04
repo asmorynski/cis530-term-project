@@ -50,3 +50,7 @@ with torch.no_grad():
 		correct += (predicted == lbl).sum().item()
 
 print(f"Accuracy: {(correct/total)*100:.2f}%")
+
+weight_path = "cnn_waste.pth"
+torch.save(model.state_dict(), weight_path)
+print(f"Saved model weights to {weight_path}")
