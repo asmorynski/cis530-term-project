@@ -7,6 +7,8 @@ from model import CNN_Waste
 
 transform = transforms.Compose([
 	transforms.Resize((128,128)),
+	transforms.RandomHorizontalFlip(),
+	transforms.RandomRotation(10),
 	transforms.ToTensor()
 ])
 
@@ -25,7 +27,7 @@ criteria = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr = 0.001)
 
 ##training
-epochs = 5
+epochs = 15
 print("Starting training")
 for epoch in range(1, epochs+1):
 	model.train()
