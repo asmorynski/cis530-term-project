@@ -13,10 +13,10 @@ Structure:
 
 How to run:
 
-Option 1: Retraining
+Option 1: Retraining -
 Run 'python train.py'
 
-Option 2: Using pre-trained weights
-Download 'cnn_waste.pth' from google drive link: https://drive.google.com/file/d/1B7FBkWTveO_KP39wPymnUvaOqoQTIXX8/view?usp=sharing
-Place 'cnn_waste.pth' in root directory
-Run 'python evaluate.py'
+Option 2: Using pre-trained weights - 
+Download 'cnn_waste.pth' from google drive link: https://drive.google.com/file/d/1B7FBkWTveO_KP39wPymnUvaOqoQTIXX8/view?usp=sharing - 
+Place 'cnn_waste.pth' in root directory - 
+Run 'python evaluate.py' - 
